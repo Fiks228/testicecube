@@ -1,0 +1,193 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('backgroundsheader.jpg');
+    color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 102%;
+    height: 45px;
+    border: 1px solid #648dff;
+    padding: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(41, 41, 49);
+    color: white;
+}
+
+.download {
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    padding: 10px 10px;
+    color: aliceblue;
+    text-decoration: none;
+    border: none;
+    font: inherit;
+    outline: inherit;
+    transition: 0.8s;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+}
+.download:hover{
+    box-shadow: 0px 0px 12px 0px rgba(246, 163, 0, 0.50);
+    background: #FFB800;
+}
+.download:active{
+    background-color: crimson;
+    box-shadow: 0px 0px 12px 0px crimson;
+    transition: 0.3s;
+}
+h3{
+   position: relative;
+   left: 1%;
+
+}
+
+
+.line {
+    width: 0;
+    height: 37px;
+    background: linear-gradient(270deg, #d53369, #daae51);
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+.Launch{
+    background-color: rgba(140, 247, 33, 0.884);
+    color: azure;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 1;
+}
+.minecrafticonmstart{
+    height: 30px;
+    position: relative;
+    top: 7px;
+}
+/* Стили для экранов шириной 600px и меньше */
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    .Launchh, .download, div {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  
+  /* Стили для экранов шириной от 601px до 1024px */
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    .Launchh, .download, div {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Стили для экранов шириной 1025px и больше */
+  @media screen and (min-width: 1025px) {
+    body {
+      font-size: 18px;
+    }
+    .Launchh, .download, div {
+      padding: 15px 30px;
+      font-size: 16px;
+    }
+  }
+  img[alt="www.000webhost.com"] {
+    visibility: hidden;
+  }
+  .navbar {
+    background-color: #333;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  @media screen and (max-width: 600px) {
+  .navbar {
+    background-color: #333;
+      overflow: hidden;
+        position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  
+  }
+  }
+  
+  
+  
+  .navbar a {
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 1px;
+      text-decoration: none;
+  }
+  
+  .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+  .navbar .logo a {
+      display: block;
+      color: #faf9f9;
+      text-align: center;
+      padding: 5px 7px;
+      text-decoration: none;
+      
+  }
+  .navbar .logo a:active {
+      display: block;
+      background-color: #6e6e6e00;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 5px 7px;
+      text-decoration: none;
+      position: relative;
+      top: 2px;
+  }
+  .navbar .logo a:hover {
+      display: block;
+      background-color: #6e6e6e00;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 5px 7px;
+      text-decoration: none;       
+  text-shadow: 0 0 5px #ffffff; /* ÃÅ¸ÃÂ¾ÃÂ´Ã‘ÂÃÂ²ÃÂµÃ‘â€šÃÂºÃÂ° Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¸ ÃÂ½ÃÂ°ÃÂ²ÃÂµÃÂ´ÃÂµÃÂ½ÃÂ¸ÃÂ¸ */
+  }
+  
+  .logo {
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+  
+  .logo img {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 10px;
+      position: relative;
+      left: 4px;
+      top: -15px;
+  }
+  .logo img:active {
+      height: 50px;
+      margin-right: 10px;
+      border-radius: 10px;
+      position: relative;
+      top: 0.5px;
+  }
+  

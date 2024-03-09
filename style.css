@@ -1,0 +1,479 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    backdrop-filter: blur(15px);
+}
+
+.navbar {
+  background-color: #333;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+.navbar {
+  background-color: #333;
+    overflow: hidden;
+      position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+}
+
+
+
+.navbar a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 1px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.navbar .logo a {
+    display: block;
+    color: #faf9f9;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+    
+}
+.navbar .logo a:active {
+    display: block;
+    background-color: #6e6e6e00;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+    position: relative;
+    top: 2px;
+}
+.navbar .logo a:hover {
+    display: block;
+    background-color: #6e6e6e00;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;       
+text-shadow: 0 0 5px #ffffff; /* ÃÅ¸ÃÂ¾ÃÂ´Ã‘ÂÃÂ²ÃÂµÃ‘â€šÃÂºÃÂ° Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¸ ÃÂ½ÃÂ°ÃÂ²ÃÂµÃÂ´ÃÂµÃÂ½ÃÂ¸ÃÂ¸ */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    position: relative;
+    left: 4px;
+    top: -15px;
+}
+.logo img:active {
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 0.5px;
+}
+
+
+.header {
+  height: 750px;
+background-image: url('backgroundsheader.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+padding: 50px;
+position: relative;
+top: 90px;
+border-radius:5px ;
+}
+@media screen and (max-width: 600px) {
+  .header {
+     height: 375px;
+background-image: url('backgroundsheader.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+padding: 50px;
+position: relative;
+top: 140px;
+border-radius:5px ;
+  }
+}
+
+
+.header h1 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.header p {
+font-size: 1.2em;
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.header button {
+  font-size: 1em;
+  padding: 20px 40px;
+  margin-top: 20px;
+   width: auto;
+}
+.header h1 {
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+header{
+background-color: rgba(0, 0, 0, 0.527);
+}
+.header-content {
+    position: relative;
+    color: white;
+    text-align: center;
+    top: -5px;
+}
+
+.button {
+    display: inline-block;
+    width: 15vw; /* 15% ÃÂ¾Ã‘â€š Ã‘Ë†ÃÂ¸Ã‘â‚¬ÃÂ¸ÃÂ½Ã‘â€¹ ÃÂ¾ÃÂºÃÂ½ÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¾Ã‘ÂÃÂ¼ÃÂ¾Ã‘â€šÃ‘â‚¬ÃÂ° */
+    height: 4vh; /* 4% ÃÂ¾Ã‘â€š ÃÂ²Ã‘â€¹Ã‘ÂÃÂ¾Ã‘â€šÃ‘â€¹ ÃÂ¾ÃÂºÃÂ½ÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¾Ã‘ÂÃÂ¼ÃÂ¾Ã‘â€šÃ‘â‚¬ÃÂ° */
+    margin: 2vh auto; /* 2% ÃÂ¾Ã‘â€š ÃÂ²Ã‘â€¹Ã‘ÂÃÂ¾Ã‘â€šÃ‘â€¹ ÃÂ¾ÃÂºÃÂ½ÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¾Ã‘ÂÃÂ¼ÃÂ¾Ã‘â€šÃ‘â‚¬ÃÂ° */
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 5px;
+    border-radius: 1vw; /* 1% ÃÂ¾Ã‘â€š Ã‘Ë†ÃÂ¸Ã‘â‚¬ÃÂ¸ÃÂ½Ã‘â€¹ ÃÂ¾ÃÂºÃÂ½ÃÂ° ÃÂ¿Ã‘â‚¬ÃÂ¾Ã‘ÂÃÂ¼ÃÂ¾Ã‘â€šÃ‘â‚¬ÃÂ° */
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:active {
+    background-color: #24a52ad2;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+}
+
+.screenshot-gallery {
+    display: flex;
+justify-content: center; /* Ãâ€™Ã‘â€¹Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ½ÃÂ¸ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ ÃÂ¿ÃÂ¾ ÃÂ³ÃÂ¾Ã‘â‚¬ÃÂ¸ÃÂ·ÃÂ¾ÃÂ½Ã‘â€šÃÂ°ÃÂ»ÃÂ¸ */
+align-items: center; /* Ãâ€™Ã‘â€¹Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ½ÃÂ¸ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ ÃÂ¿ÃÂ¾ ÃÂ²ÃÂµÃ‘â‚¬Ã‘â€šÃÂ¸ÃÂºÃÂ°ÃÂ»ÃÂ¸ */
+overflow-x: auto;
+padding: 20px;
+background-color: white;
+border-radius: 1px;
+margin-top: 20px;
+position: relative;
+top: 50px;
+
+}
+
+.screenshot-gallery img {
+    height: 300px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 600px Ð¸ Ð¼ÐµÐ½ÑŒÑˆÐµ */
+@media screen and (max-width: 600px) {
+  .screenshot-gallery {
+    padding: 10px;
+  }
+  .screenshot-gallery img {
+    height: 150px;
+    margin-right: 5px;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ Ð¾Ñ‚ 601px Ð´Ð¾ 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .screenshot-gallery {
+    padding: 15px;
+  }
+  .screenshot-gallery img {
+    height: 200px;
+    margin-right: 7px;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 1025px Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ */
+@media screen and (min-width: 1025px) {
+  /* Ð’Ð°ÑˆÐ¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ ÑÑ‚Ð¸Ð»Ð¸ ÑƒÐ¶Ðµ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹ Ð´Ð»Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… ÑÐºÑ€Ð°Ð½Ð¾Ð² */
+}
+
+.backgroundtextdopinfo{
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgb(31, 31, 31) 0%, rgb(31, 31, 31) 17%, rgb(31, 0, 235) 100%);
+position: relative;
+top: 40px;
+padding: 10px;
+}
+
+.backgroundtextdopinfo h3{
+text-shadow: -1px 0 0 red, /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ»ÃÂµÃÂ²ÃÂ¾ */
+        0 -1px 0 red, /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ²ÃÂµÃ‘â‚¬Ã‘â€¦ */
+        1px 0 0 red, /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ¾ */
+        0 1px 0 red; /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ½ÃÂ¸ÃÂ· */
+font-size: 150px;
+color: #fff;
+margin: 0;
+
+}
+
+
+.backgroundtextdopinfo h3{
+text-shadow: -1px 0 0 rgb(0, 0, 0), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ»ÃÂµÃÂ²ÃÂ¾ */
+        0 -1px 0 rgb(68, 0, 255), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ²ÃÂµÃ‘â‚¬Ã‘â€¦ */
+        1px 0 0 rgb(4, 0, 255), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ¾ */
+        0 1px 0 rgb(0, 0, 0); /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ½ÃÂ¸ÃÂ· */
+font-size: 20px;
+color: #fff;
+margin: 0;
+}
+.IceCubeInfoplus{
+background-image: url('https://kartinkis.cdnbro.com/posts/036445-nochnye-fony-iz-mainkraft-59.jpg');
+position: relative;
+top: 25px;
+border-radius: 15px;
+color: white;
+height: 350px;
+}
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 600px Ð¸ Ð¼ÐµÐ½ÑŒÑˆÐµ */
+@media screen and (max-width: 600px) {
+  .IceCubeInfoplus {
+    height: 200px;
+    top: 15px;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ Ð¾Ñ‚ 601px Ð´Ð¾ 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .IceCubeInfoplus {
+    height: 250px;
+    top: 20px;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 1025px Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ */
+@media screen and (min-width: 1025px) {
+  /* Ð’Ð°ÑˆÐ¸ Ð¸ÑÑ…Ð¾Ð´Ð½Ñ‹Ðµ ÑÑ‚Ð¸Ð»Ð¸ ÑƒÐ¶Ðµ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð¸Ñ€Ð¾Ð²Ð°Ð½Ñ‹ Ð´Ð»Ñ Ð±Ð¾Ð»ÑŒÑˆÐ¸Ñ… ÑÐºÑ€Ð°Ð½Ð¾Ð² */
+}
+@media screen and (max-width: 600px) {
+  .IceCubeInfoplus {
+    height: 530px;
+  }
+}
+
+.home{
+position: relative;
+top:-15px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .screenshot-gallery img {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .screenshot-gallery img {
+        height: 250px;
+    }
+}
+.versiondownload{
+    position: relative;
+    top: -70px;
+    left: -175px;
+}
+.textscreen{
+    background-color: white;
+    position: relative;
+    top: 74px;
+    border: 1px; 
+border: 1px dotted; 
+border: medium dashed rgb(65, 65, 65);
+    height: 60px;
+   
+
+}
+
+.textaboutdownloadminecraft{
+    background-image: url('https://kartinkis.cdnbro.com/posts/036445-nochnye-fony-iz-mainkraft-59.jpg');
+    color: #fff;
+    position: relative;
+    top: 1px;
+    backdrop-filter: blur(16px);
+}
+.textaboutdownloadminecraft h2{
+    text-shadow: -1px 0 0 rgb(0, 0, 0), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ»ÃÂµÃÂ²ÃÂ¾ */
+        0 -1px 0 rgb(68, 0, 255), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ²ÃÂµÃ‘â‚¬Ã‘â€¦ */
+        1px 0 0 rgb(4, 0, 255), /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ¿Ã‘â‚¬ÃÂ°ÃÂ²ÃÂ¾ */
+        0 1px 0 rgb(0, 0, 0); /* ÃÂ¢ÃÂµÃÂ½Ã‘Å’ ÃÂ²ÃÂ½ÃÂ¸ÃÂ· */
+font-size: 20px;
+color: #fff;
+
+
+}
+.buttoncr {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.5s;
+  
+}
+
+.buttoncr:hover {
+    background-color: #45a049;
+}
+.buttoncr:active {
+    background-color: #24a52ad2;
+}
+.Launch{
+    background-color: rgba(140, 247, 33, 0.884);
+    color: azure;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 1;
+    position: relative;
+    top: 15px;
+}
+
+.minecrafticonmstart{
+    height: 30px;
+    position: relative;
+    top: 7px;
+}
+.lauchwindow{
+    background-color: white;
+    height: 90px;
+}
+.supportedLA{
+    width: 500px;
+    position: relative;
+    top: 25px;
+}
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 600px Ð¸ Ð¼ÐµÐ½ÑŒÑˆÐµ */
+@media screen and (max-width: 600px) {
+  .supportedLA {
+    width: 100%;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ Ð¾Ñ‚ 601px Ð´Ð¾ 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .supportedLA {
+    width: 80%;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÑÐºÑ€Ð°Ð½Ð¾Ð² ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 1025px Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ */
+@media screen and (min-width: 1025px) {
+  .supportedLA {
+    width: 500px;
+  }
+}
+
+.supported{
+    background-color: #222222;
+    
+}
+
+
+.Launchh{
+    background-color: rgba(140, 247, 33, 0.884);
+    color: azure;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 1;
+    position: relative;
+    top: -28%;
+   
+}
+.Launchh:hover{
+    background-color: rgba(139, 235, 43, 0.884);
+    color: azure;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 1;
+    position: relative;
+    top: -28%;
+   
+}
+.Launchh:active{
+    background-color: rgb(140, 247, 33);
+    color: azure;
+    padding: 10px 40px;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 1;
+    position: relative;
+    top: -28%;
+   
+}
+img[alt="www.000webhost.com"] {
+    visibility: hidden;
+  }
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¼Ð¾Ð±Ð¸Ð»ÑŒÐ½Ñ‹Ñ… ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð² (ÑÐºÑ€Ð°Ð½Ñ‹ ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 600px Ð¸ Ð¼ÐµÐ½ÑŒÑˆÐµ) */
+@media screen and (max-width: 600px) {
+  .versiondownload {
+     position: relative ;
+    top: 0%;
+    left: 0;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð¿Ð»Ð°Ð½ÑˆÐµÑ‚Ð¾Ð² Ð¸ Ð½ÐµÐ±Ð¾Ð»ÑŒÑˆÐ¸Ñ… Ð¼Ð¾Ð½Ð¸Ñ‚Ð¾Ñ€Ð¾Ð² (ÑÐºÑ€Ð°Ð½Ñ‹ ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ Ð¾Ñ‚ 601px Ð´Ð¾ 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .versiondownload {
+    top: -35px;
+    left: -87px;
+  }
+}
+
+/* Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ ÐŸÐš (ÑÐºÑ€Ð°Ð½Ñ‹ ÑˆÐ¸Ñ€Ð¸Ð½Ð¾Ð¹ 1025px Ð¸ Ð±Ð¾Ð»ÑŒÑˆÐµ) */
+@media screen and (min-width: 1025px) {
+  .versiondownload {
+    top: -70px;
+    left: -175px;
+  }
+}
+.copy{
+
+}

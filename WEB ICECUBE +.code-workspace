@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../IceCubes/Библиотека версий"
+		}
+	],
+	"settings": {
+		"workbench.iconTheme": "vscode-icons"
+	}
+}

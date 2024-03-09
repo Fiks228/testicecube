@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Менеджер версий Minecraft</title>
+    <link rel="stylesheet" href="manver.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Скачать версии Minecraft</h1>
+    <div>
+        <h3>Версия 1.20.60.23</h3>
+        <button class="download" id="downloadButton1" onclick="download('downloadButton1', 'loader1', 'Библиотека версий/minecraft-1-20-60-23-xbox-servers-compressed.apk')">Скачать</button>
+        <div id="loader1" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.20.51.01</h3>
+        <button class="download" id="downloadButton2" onclick="download('downloadButton2', 'loader2', 'Библиотека версий/minecraft-1-20-51-01-xbox-servers-compressed.apk')">Скачать</button>
+        <div id="loader2" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.19.80.02</h3>
+        <button class="download" id="downloadButton3" onclick="download('downloadButton3', 'loader3', 'Библиотека версий/minecraft-1-19-80-02-xbox-servers-compressed.apk')">Скачать</button>
+        <div id="loader3" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.19.30.04</h3>
+        <button class="download" id="downloadButton4" onclick="download('downloadButton4', 'loader4', 'Библиотека версий/minecraft-1-19-30-04-xbox-servers-skins-compressed.apk')">Скачать</button>
+        <div id="loader4" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.19.2</h3>
+        <button class="download" id="downloadButton5" onclick="download('downloadButton5', 'loader5', 'Библиотека версий/minecraft-1-19-02-02-xbox-servers.apk')">Скачать</button>
+        <div id="loader5" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.18.32.02</h3>
+        <button class="download" id="downloadButton6" onclick="download('downloadButton6', 'loader6', 'Библиотека версий/minecraft-1-18-32-02-xbox-servers.apk')">Скачать</button>
+        <div id="loader6" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+    <div>
+        <h3>Версия 1.16.211.01</h3>
+        <button class="download" id="downloadButton7" onclick="download('downloadButton7', 'loader7', 'Библиотека версий/minecraft-1-16-221-01-xbox-servers.apk')">Скачать</button>
+        <div id="loader7" style="display: none;">
+            <div class="line"></div>
+        </div>
+    </div>
+ <!--Вы можете добавить еще версий по желанию.-->
+</div>
+</body>
+</html>
+
+<script>
+function download(buttonId, loaderId, file) {
+    document.getElementById(buttonId).style.display = 'none';
+    document.getElementById(loaderId).style.display = 'block';
+
+    setTimeout(function() {
+        window.location.href = file;
+        document.getElementById(loaderId).style.display = 'none';
+        document.getElementById(buttonId).style.display = 'block';
+    }, 1000); // Задержка в 1 секунд
+}
+</script>
+<a class="Launch" href="minecraft://"><img src="icon/minecraft_22400.png" alt="" class="minecrafticonmstart">Запустить minecraft</a>
+</body>
+</html>
